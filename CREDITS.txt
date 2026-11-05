@@ -1,0 +1,138 @@
+영웅 성장기(가제) — 소재 출처·라이선스
+(tools/pixel/credits2d.py 가 자동으로 씀 · 손으로 고치지 말 것)
+
+진짜 돈 결제·광고 없음. 모든 소재는 CC0·CC BY·SIL OFL 또는 직접 만든 것만 씁니다.
+
+[글꼴]
+- Jua (주아체) — Woowahan Brothers. SIL Open Font License 1.1 (Fonts/OFL-Jua.txt). 출처: Google Fonts
+- Black Han Sans (검은고딕) — Zess Type. SIL Open Font License 1.1 (Fonts/OFL-BlackHanSans.txt). 출처: Google Fonts
+- 피해 숫자 도트 글자: Black Han Sans 를 작게 안티에일리어싱 없이 찍고 1도트 테두리를 두름(fx_make.py)
+
+[도트 그림의 원본 3D 모델]
+아래 3D 모델을 블렌더에서 위에서 비스듬히(50°) 5방향으로 셀 그림자 렌더한 뒤 4분의 1로 줄이고 색 수를 줄여 도트 그림으로 바꿈(수정한 2차 저작물).
+색 손보기: 전사 검은 천 → 파랑·쇠 색 어둡게, 용 → 에메랄드, 골렘 → 이끼색, 거미·대왕 거미·오크 대장·트롤 피부 색 바꿈, 주인공 머리 1.3배.
+
+[주인공]
+- warrior: "Strong Knight" by DJMaesen (https://sketchfab.com/bumstrum) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/9d912e0fedb44b619fbd2a083bbf174f
+  · 원본에서 고친 것: 등의 철퇴·단검을 지우고 한손검(오른손)·방패(왼팔)를 붙임. idle·run·attack·attack2·slam 은 다른 모델 동작을 옮겨 옴(검 방향은 원본 인형의 칼 방향에 맞춤). block·spin·ride 는 idle 자세를 고쳐 만든 동작(방패 들기·제자리 한 바퀴 베기·말에 앉은 다리 벌린 자세). 스펙큘러 방식 재질을 금속 방식으로 바꿔 구움. 함께 쓴 원본: 'Animation - Sword Idle'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/30a437791b1e4bfd92331b7b5d1f9c8d), 'Animation - Run'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/e05e53ab881b413ab921b693256b1847), 'Animation - Sword 1'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/01f96f346e97468d9375df58a21ff69b), 'Animation - Sword 2'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/534ac93657234b1e96ab1348f6b516d5), 'Animation - Sword 3'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/6654db7e021e45728d117efbcc5a616a), 'medieval sword'(LowSeb, CC BY 4.0, https://sketchfab.com/3d-models/da574cba504e4b83a3293f3d3bd067fb), 'Medieval Shield'(Digital Goblin, CC BY 4.0, https://sketchfab.com/3d-models/64c665915daf4e50b2d361b9ce52a3e1) 삼각형 12285->12285, 새 UV에 한 장으로 구움, 크기 z=1.8m, 머리 -Y, 원점 발밑
+  · 함께 쓴 원본: "Animation - Sword Idle" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/30a437791b1e4bfd92331b7b5d1f9c8d
+  · 함께 쓴 원본: "Animation - Run" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/e05e53ab881b413ab921b693256b1847
+  · 함께 쓴 원본: "Animation - Sword 1" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/01f96f346e97468d9375df58a21ff69b
+  · 함께 쓴 원본: "Animation - Sword 2" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/534ac93657234b1e96ab1348f6b516d5
+  · 함께 쓴 원본: "Animation - Sword 3" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/6654db7e021e45728d117efbcc5a616a
+  · 함께 쓴 원본: "medieval sword" by LowSeb — CC BY 4.0 — https://sketchfab.com/3d-models/da574cba504e4b83a3293f3d3bd067fb
+  · 함께 쓴 원본: "Medieval Shield" by Digital Goblin — CC BY 4.0 — https://sketchfab.com/3d-models/64c665915daf4e50b2d361b9ce52a3e1
+- mage: "Mage" by rSquare (https://sketchfab.com/rSquare) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/0015c579cfa440a7a2bd0a3f14395f05
+  · 원본에서 고친 것: 회색 로브를 짙은 남보라색으로 바꿈. idle·run·attack(앞으로 주문)·cast(아래로 큰 주문)는 다른 모델 동작을 옮겨 옴. ride 는 idle 자세를 고쳐 만든 말에 앉은 자세. 금색 지팡이(Golden Daïm staff)를 왼손 뼈에 붙임. 함께 쓴 원본: 'Animation - Idle'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/167a23971bab428e90f2a9c09b681cd4), 'Animation - Run'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/e05e53ab881b413ab921b693256b1847), 'Animation - Cast Spell Forward'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/0beafba31c2a493f853144f487e3b107), 'Animation - Cast Spell Down'(AlexFerrart3D, CC BY 4.0, https://sketchfab.com/3d-models/6dd67d6ba83e48608ce66fabc666bea0), 'Golden Daïm staff'(Evie Verstappen, CC BY 4.0, https://sketchfab.com/3d-models/a4c2f4ed0dd74fc18234d73a939489c3) 삼각형 25371->13297, 새 UV에 한 장으로 구움, 크기 z=1.8m, 머리 -Y, 원점 발밑
+  · 함께 쓴 원본: "Animation - Idle" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/167a23971bab428e90f2a9c09b681cd4
+  · 함께 쓴 원본: "Animation - Run" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/e05e53ab881b413ab921b693256b1847
+  · 함께 쓴 원본: "Animation - Cast Spell Forward" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/0beafba31c2a493f853144f487e3b107
+  · 함께 쓴 원본: "Animation - Cast Spell Down" by AlexFerrart3D — CC BY 4.0 — https://sketchfab.com/3d-models/6dd67d6ba83e48608ce66fabc666bea0
+  · 함께 쓴 원본: "Golden Daïm staff" by Evie Verstappen — CC BY 4.0 — https://sketchfab.com/3d-models/a4c2f4ed0dd74fc18234d73a939489c3
+
+[몬스터·대장]
+- goblin: "Goblin Character" by Rindir (https://sketchfab.com/rindir) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/e59fe934fce24f41ac10ebf2b249a6a7
+  · 원본에서 고친 것: 삼각형 1560->1560, 새 UV에 한 장으로 구움, 크기 z=1.1m, 머리 -Y, 원점 발밑
+- wolf2: "Animated Wolf Scene" by Roo (https://sketchfab.com/roo3d) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/5d55506494e5460eaadf04370e07cd5c
+  · 원본에서 고친 것: 원본 동작 idle(앞 120프레임)·walk·run·creep 은 이름만 바꿈. 원본에 물기·쓰러짐이 없어 attack(몸을 숙이고 머리를 내밀며 입을 벌려 무는 동작)·die(옆으로 쓰러짐)는 idle 자세를 고쳐 만듦. 삼각형 11776->5910, 새 UV에 한 장으로 구움, 크기 z=1.0m, 머리 -Y, 원점 발밑
+- spider: "Animated Spider" by Shadocks (https://sketchfab.com/shadocks) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/af87017501fc44e39a33c220f2435100
+  · 원본에서 고친 것: 삼각형 19163->1181, 원래 UV·텍스처 줄임, 크기 y=1.0m, 머리 -Y, 원점 발밑
+- scorpion: "Scorpion" by anthonyvanoo (https://sketchfab.com/anthonyvanoo) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/4c0fd62d33ab4d2592ee0a1d985a480d
+  · 원본에서 고친 것: 원본 동작 이름만 바꿈(Idle·Walk·Area Attack→attack·Defend→defend·Death→die). 큰 전갈 괴물로 길이 1.6m. 삼각형 7264->7264, 원래 UV·텍스처 줄임, 크기 y=1.6m, 머리 -Y, 원점 발밑
+- orc: "Boss Minion Orc" by Lowpolyprincipal (https://sketchfab.com/Lowpolyprincipal) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/2cdbaaa81c164570805df88a4dd0abae
+  · 원본에서 고친 것: idle·attack·die 동작은 같은 믹사모 뼈대의 'Orc Model Rigged Packed Resources'(3DE_Study, CC BY 4.0, https://sketchfab.com/3d-models/b82ab03340084827b5d9c1c234db4644)에서 옮겨 옴. 삼각형 7319->2462, 원래 UV·텍스처 줄임, 크기 z=1.9m, 머리 -Y, 원점 발밑
+- bat: "Bat flying" by rafaelrafi (https://sketchfab.com/rafaelrafi) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/de028c94ae87414e9da27b294afa97ac
+  · 원본에서 고친 것: 삼각형 3668->1182, 원래 UV·텍스처 줄임, 크기 x=0.8m, 머리 -Y, 원점 발밑
+- golem: "Rock Monster" by elarix (https://sketchfab.com/elarix) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/e8c6a0ce29e142078d63f8871b943953
+  · 원본에서 고친 것: 쓰러짐(die)=원작대로 바위 조각으로 무너짐. 색을 회갈색 바위로 어둡게(채도 45% 뺌·밝기 약 0.6배). 삼각형 2170->2170, 원래 UV·텍스처 줄임, 크기 z=3.0m, 머리 -Y, 원점 발밑
+- troll: "Troll" by SJunior3d (https://sketchfab.com/sjunior3d) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/bceb1cb47186457c8571a23e6aff1b8e
+  · 원본에서 고친 것: 원본 동작 이름만 바꿈(idle·walk·run·attack1→attack·attack2·take_damage→hit·death→die). 대장용으로 키 3.2m. 삼각형 10466->10466, 새 UV에 한 장으로 구움, 크기 z=3.2m, 머리 -Y, 원점 발밑
+- dragon2: "European Dragon" by Regina Cachoa (https://sketchfab.com/ReginaCachoa) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/82f393a2e6c048ad80c171ce3b3a7b87
+  · 원본에서 고친 것: 원본 동작 idle(Idle Stand)·walk·run·fly·sit 은 이름만 바꿈. 원본에 공격·쓰러짐이 없어 attack(몸을 숙이며 목을 앞으로 내밀어 무는 동작)·die(옆으로 쓰러짐)는 idle 자세를 고쳐 만듦. 삼각형 42336->14774, 새 UV에 한 장으로 구움, 크기 y=7.0m, 머리 -Y, 원점 발밑
+
+[소환수]
+- phoenix: "phoenix bird" by NORBERTO-3D (https://sketchfab.com/norberto3d) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/844ba0cf144a413ea92c779f18912042
+  · 원본에서 고친 것: 원본은 나는 동작 하나뿐: run=원본 날갯짓, idle=1.5배 느리게, attack=빠른 날갯짓(0.55배 시간)으로 만듦. 삼각형 3719->3719, 새 UV에 한 장으로 구움, 크기 y=1.3m, 머리 -Y, 원점 발밑
+- stoneguard: "Golem" by DWN (https://sketchfab.com/dwn76) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/241619b4423148029ceecddbbe691af0
+  · 원본에서 고친 것: 원본 동작 idle·walk(=run 이름으로)·hit(=attack). 삼각형 3320->3320, 원래 UV·텍스처 줄임, 크기 z=1.2m, 머리 -Y, 원점 발밑
+- owl: "Day 20 - Snowy Owl" by Lilly! (https://sketchfab.com/LillyanneTr) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/745c105544784b9a80bbec49cccd1580
+  · 원본에서 고친 것: 원본 동작 하나를 빠르기만 바꿔 씀: run=원본 그대로, idle=0.3배 느리게, attack=1.8배 빠르게. (run=날갯짓) 삼각형 5988->5988, 새 UV에 한 장으로 구움, 크기 x=1.0m, 머리 -Y, 원점 발밑
+- eagle: "White Eagle Animation Fast Fly" by GremorySaiyan (https://sketchfab.com/GremorySaiyan) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/30203bf39e5145f19c79e83c550139d3
+  · 원본에서 고친 것: 원본 동작 하나를 빠르기만 바꿔 씀: run=원본 그대로, idle=0.3배 느리게, attack=1.8배 빠르게. (run=날기) 삼각형 3128->3128, 원래 UV·텍스처 줄임, 크기 x=1.2m, 머리 -Y, 원점 발밑
+- rabbit: "Rabbit Rigged" by FourthGreen (https://sketchfab.com/FourthGreen) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/e7213589744d436b9d96e2dbb31198a5
+  · 원본에서 고친 것: 원본 동작 하나를 빠르기만 바꿔 씀: run=원본 그대로, idle=0.3배 느리게, attack=1.8배 빠르게. (run=깡충 뛰기) 삼각형 2266->2266, 원래 UV·텍스처 줄임, 크기 z=0.5m, 머리 -Y, 원점 발밑
+- snowleopard: "Leopard Animation Run" by GremorySaiyan (https://sketchfab.com/GremorySaiyan) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/5a36868106f843d4a24d87334f1550fe
+  · 원본에서 고친 것: 원본 동작 하나를 빠르기만 바꿔 씀: run=원본 그대로, idle=0.3배 느리게, attack=1.8배 빠르게. (run=달리기) 삼각형 4892->4892, 원래 UV·텍스처 줄임, 크기 z=0.8m, 머리 -Y, 원점 발밑
+
+[탈것]
+- horse: "лошадь horse" by Paleo Modelist (https://sketchfab.com/victory_) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/6b16309d6dfc4ed1978e1748ebcf4530
+  · 원본에서 고친 것: run(질주)은 다른 말 모델(Animated Rigged Horse With Saddle)의 질주 동작을 같은 계열 뼈 이름으로 옮겨 옴. idle 은 서 있는 기본 자세에 목·머리·꼬리를 살짝 움직여 만듦. walk 는 원본 동작. 함께 쓴 원본: 'Animated Rigged Horse With Saddle'(Ayan, CC BY 4.0, https://sketchfab.com/3d-models/b08743c2c4734fb98a4e0a2f5767c318) 삼각형 4476->4476, 원래 UV·텍스처 줄임, 크기 y=2.45m, 머리 -Y, 원점 발밑
+  · 함께 쓴 원본: "Animated Rigged Horse With Saddle" by Ayan — CC BY 4.0 — https://sketchfab.com/3d-models/b08743c2c4734fb98a4e0a2f5767c318
+- blackwolf: "Low Poly wolf" by manoeldarochadeoliveira (https://sketchfab.com/manoeldarochadeoliveira) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/c6baa6970e724c6a97d5e1ecb8823179
+  · 원본에서 고친 것: 포털 디펜스 적 늑대(wolf)와 같은 원본이라 털을 검게 바꾸고 1.6배 키워 검은 큰늑대로 만듦(마지막 수단). 삼각형 3880->3880, 원래 UV·텍스처 줄임, 크기 z=1.6m, 머리 -Y, 원점 발밑
+- lion: "Lion animation low poly" by haykel shaba (https://sketchfab.com/shabahaykel) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/47a9037f236740cabbed1388bf89463d
+  · 원본에서 고친 것: 원본은 동작 10개가 한 줄로 이어진 것: idle(0~36)·attack(39~57)·walk(262~288)·run(289~300) 구간을 잘라 씀. 탈것용으로 실제보다 크게(키 1.5m) 맞춤. 삼각형 12164->7879, 원래 UV·텍스처 줄임, 크기 z=1.5m, 머리 -Y, 원점 발밑
+- bear: "Armoured Spirit Bear" by borisvdb (https://sketchfab.com/borisvdb) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/ee35b05e40ac463da7c8ae92f701cf78
+  · 원본에서 고친 것: run 은 원본 walk 를 2배 빠르게 돌린 것(원본에 달리기 없음). 삼각형 10876->7878, 원래 UV·텍스처 줄임, 크기 z=1.55m, 머리 -Y, 원점 발밑
+
+[맵]
+- 바닥(풀·짙은 풀·흙길·꽃·자갈): 코드로 그림(map_make.py, 자체 제작)
+- 나무·바위·울타리·돌기둥·그루터기·꽃덤불: 엔비디아 무료 API 의 FLUX.2-klein-4B(Black Forest Labs, 모델 라이선스 Apache 2.0 — https://huggingface.co/black-forest-labs/FLUX.2-klein-4B)로 만든 그림 2장을 오려 도트로 줄임
+
+[소리]
+- sword_swing: 칼 휘두름 — Kenney 'RPG Audio' knifeSlice(CC0) 자르기·크기 맞춤
+- sword_hit: 칼 맞음 — Kenney 'Impact Sounds' impactPunch_medium_001(CC0) 자르기·크기 맞춤
+- shield_block: 금속 막기 — Kenney 'Impact Sounds' impactMetal_medium_001(CC0) 자르기·크기 맞춤
+- footstep_grass: 풀 발소리 — Kenney 'Impact Sounds' footstep_grass_001(CC0) 자르기·크기 맞춤
+- coin_pickup: 금화 줍기 — Kenney 'RPG Audio' handleCoins(CC0) 자르기·크기 맞춤
+- loot_drop: 장비 떨어짐 — Kenney 'RPG Audio' handleCoins2(CC0) 자르기·크기 맞춤
+- levelup: 레벨업 차임 — Kenney 'Impact Sounds' impactBell_heavy_000(CC0) 자르기·크기 맞춤
+- button: 버튼 — Kenney 'Interface Sounds' switch_002(CC0)
+- cannon_boom: 대포 쾅 — rubberduck '25 CC0 bang/firework SFX' cannon_03(CC0) 자르기·압축
+- ice_cast: 얼음 마법 — 코드 합성(높은 종소리+얼음 깨짐)
+- lightning_zap: 번개 — 코드 합성(방전 잡음+윙 소리)
+- monster_poof: 몬스터 사라짐 '펑' — 코드 합성
+- horn_wave: 웨이브 시작 뿔피리 — 코드 합성(톱니파+필터+떨림)
+- 그 밖의 효과음(불 마법·화염구 폭발·얼음 폭풍·실패음 등): 코드로 합성(Audio.cs, 자체 제작)
+
+[아이콘] game-icons.net — CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · 수정: 흰 실루엣 256px PNG 로 바꿈, 게임 안에서 색을 입힘
+- slot_weapon: 'broadsword' by Lorc — https://game-icons.net/1x1/lorc/broadsword.html
+- slot_staff: 'wizard-staff' by Lorc — https://game-icons.net/1x1/lorc/wizard-staff.html
+- slot_helmet: 'crested-helmet' by Lorc — https://game-icons.net/1x1/lorc/crested-helmet.html
+- slot_armor: 'breastplate' by Lorc — https://game-icons.net/1x1/lorc/breastplate.html
+- slot_gloves: 'gauntlet' by Delapouite — https://game-icons.net/1x1/delapouite/gauntlet.html
+- slot_boots: 'leather-boot' by Lorc — https://game-icons.net/1x1/lorc/leather-boot.html
+- slot_ring: 'diamond-ring' by Delapouite — https://game-icons.net/1x1/delapouite/diamond-ring.html
+- stat_atk: 'crossed-swords' by Lorc — https://game-icons.net/1x1/lorc/crossed-swords.html
+- stat_hp: 'hearts' by Skoll — https://game-icons.net/1x1/skoll/hearts.html
+- stat_regen: 'health-increase' by sbed — https://game-icons.net/1x1/sbed/health-increase.html
+- stat_crit: 'bullseye' by Skoll — https://game-icons.net/1x1/skoll/bullseye.html
+- stat_critdmg: 'bright-explosion' by Lorc — https://game-icons.net/1x1/lorc/bright-explosion.html
+- stat_aspd: 'wind-slap' by Lorc — https://game-icons.net/1x1/lorc/wind-slap.html
+- sk_whirl: 'sword-spin' by Lorc — https://game-icons.net/1x1/lorc/sword-spin.html
+- sk_dash: 'running-ninja' by Darkzaitzev — https://game-icons.net/1x1/darkzaitzev/running-ninja.html
+- sk_guard: 'templar-shield' by Delapouite — https://game-icons.net/1x1/delapouite/templar-shield.html
+- sk_quake: 'earth-crack' by Lorc — https://game-icons.net/1x1/lorc/earth-crack.html
+- sk_fireball: 'burning-meteor' by Lorc — https://game-icons.net/1x1/lorc/burning-meteor.html
+- sk_blizzard: 'snowflake-2' by Lorc — https://game-icons.net/1x1/lorc/snowflake-2.html
+- sk_chain: 'lightning-branches' by Lorc — https://game-icons.net/1x1/lorc/lightning-branches.html
+- sk_barrier: 'shield-echoes' by Lorc — https://game-icons.net/1x1/lorc/shield-echoes.html
+- tab_grow: 'biceps' by Delapouite — https://game-icons.net/1x1/delapouite/biceps.html
+- tab_gear: 'chest-armor' by Delapouite — https://game-icons.net/1x1/delapouite/chest-armor.html
+- tab_pet: 'paw-print' by Lorc — https://game-icons.net/1x1/lorc/paw-print.html
+- tab_mount: 'horse-head' by Delapouite — https://game-icons.net/1x1/delapouite/horse-head.html
+- tab_skill: 'spell-book' by Delapouite — https://game-icons.net/1x1/delapouite/spell-book.html
+- tab_settings: 'cog' by Lorc — https://game-icons.net/1x1/lorc/cog.html
+- cur_gold: 'two-coins' by Delapouite — https://game-icons.net/1x1/delapouite/two-coins.html
+- cur_gem: 'gems' by Lorc — https://game-icons.net/1x1/lorc/gems.html
+- cur_stone: 'crystal-shine' by Lorc — https://game-icons.net/1x1/lorc/crystal-shine.html
+- boss: 'horned-helm' by Lorc — https://game-icons.net/1x1/lorc/horned-helm.html
+- offline: 'night-sleep' by Delapouite — https://game-icons.net/1x1/delapouite/night-sleep.html
+- chest: 'chest' by Delapouite — https://game-icons.net/1x1/delapouite/chest.html
+- levelup: 'upgrade' by Delapouite — https://game-icons.net/1x1/delapouite/upgrade.html
+- auto: 'cycle' by Lorc — https://game-icons.net/1x1/lorc/cycle.html
+- summon: 'star-swirl' by Lorc — https://game-icons.net/1x1/lorc/star-swirl.html
+
+[코드로 만든 것]
+- 도트 효과(칼 휘두름·회전 베기·불덩이·폭발·얼음·방패 빛·땅 가르기·돌진·먼지·레벨업 빛기둥·빛 조각·그림자·금화·반짝·상자): fx_make.py(자체 제작)
+- 대장 출현 띠·처치 글자·빨간 가장자리·UI 둥근 판: (주)옵시드 자체 제작(코드)
