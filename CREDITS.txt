@@ -6,11 +6,13 @@
 [글꼴]
 - Jua (주아체) — Woowahan Brothers. SIL Open Font License 1.1 (Fonts/OFL-Jua.txt). 출처: Google Fonts
 - Black Han Sans (검은고딕) — Zess Type. SIL Open Font License 1.1 (Fonts/OFL-BlackHanSans.txt). 출처: Google Fonts
-- 피해 숫자 도트 글자: Black Han Sans 를 작게 안티에일리어싱 없이 찍고 1도트 테두리를 두름(fx_make.py)
+- 피해 숫자: Black Han Sans 를 고해상도로 매끈하게 찍고 어두운 테(치명 = 노랑→주황)(fx_make.py → UI/Num)
 
 [도트 그림의 원본 3D 모델]
-아래 3D 모델을 블렌더에서 위에서 비스듬히(50°) 5방향으로 셀 그림자 렌더한 뒤 4분의 1로 줄이고 색 수를 줄여 도트 그림으로 바꿈(수정한 2차 저작물).
-색 손보기: 전사 검은 천 → 파랑·쇠 색 어둡게, 용 → 에메랄드, 골렘 → 이끼색, 거미·대왕 거미·오크 대장·트롤 피부 색 바꿈, 주인공 머리 1.3배.
+아래 3D 모델을 블렌더에서 위에서 비스듬히(38°) 5방향으로 셀 그림자(3단) 렌더한 뒤 4분의 1로 줄이고(1m = 56 도트) 색 수를 줄여 1도트 외곽선을 두른 도트 그림으로 바꿈(수정한 2차 저작물).
+고친 것: 전사 = 은빛 갑옷은 그대로, 어두운 천·가죽을 뼈 자리마다 색칠(몸통 천·망토 파랑 · 팔다리 쇠사슬 회색 · 손발 가죽 갈색) + 투구에 빨간 깃털(직접 만든 도형) · 마법사 겉옷 밝은 보라
+  · 머리 키우기(전사 1.75배 · 마법사 1.6배 · 고블린 1.5배) · 고블린 창 자루 줄임 · 용 → 에메랄드, 골렘 → 이끼색, 거미·대왕 거미·오크 대장·트롤 피부 색 바꿈
+  · 승급 시험 "수련 골렘" = 이끼 골렘 모델을 밝은 회청 돌 + 금빛 장식(머리·팔뚝·손)으로 다시 칠함
 
 [주인공]
 - warrior: "Strong Knight" by DJMaesen (https://sketchfab.com/bumstrum) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/9d912e0fedb44b619fbd2a083bbf174f
@@ -76,8 +78,8 @@
   · 원본에서 고친 것: run 은 원본 walk 를 2배 빠르게 돌린 것(원본에 달리기 없음). 삼각형 10876->7878, 원래 UV·텍스처 줄임, 크기 z=1.55m, 머리 -Y, 원점 발밑
 
 [맵]
-- 바닥(풀·짙은 풀·흙길·꽃·자갈): 코드로 그림(map_make.py, 자체 제작)
-- 나무·바위·울타리·돌기둥·그루터기·꽃덤불: 엔비디아 무료 API 의 FLUX.2-klein-4B(Black Forest Labs, 모델 라이선스 Apache 2.0 — https://huggingface.co/black-forest-labs/FLUX.2-klein-4B)로 만든 그림 2장을 오려 도트로 줄임
+- 바닥(숲 녹색 4단·짙은 풀·흙길·꽃·자갈·소품 그림자): 코드로 그림(map_make2.py, 자체 제작)
+- 나무·바위·울타리·돌기둥·그루터기·꽃덤불: 블렌더 기본 도형으로 직접 만들어 캐릭터와 같은 셀 조명으로 찍고 도트로 줄임(bl_props2.py, 자체 제작)
 
 [소리]
 - sword_swing: 칼 휘두름 — Kenney 'RPG Audio' knifeSlice(CC0) 자르기·크기 맞춤
@@ -95,44 +97,82 @@
 - horn_wave: 웨이브 시작 뿔피리 — 코드 합성(톱니파+필터+떨림)
 - 그 밖의 효과음(불 마법·화염구 폭발·얼음 폭풍·실패음 등): 코드로 합성(Audio.cs, 자체 제작)
 
-[아이콘] game-icons.net — CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · 수정: 흰 실루엣 256px PNG 로 바꿈, 게임 안에서 색을 입힘
-- slot_weapon: 'broadsword' by Lorc — https://game-icons.net/1x1/lorc/broadsword.html
-- slot_staff: 'wizard-staff' by Lorc — https://game-icons.net/1x1/lorc/wizard-staff.html
-- slot_helmet: 'crested-helmet' by Lorc — https://game-icons.net/1x1/lorc/crested-helmet.html
-- slot_armor: 'breastplate' by Lorc — https://game-icons.net/1x1/lorc/breastplate.html
-- slot_gloves: 'gauntlet' by Delapouite — https://game-icons.net/1x1/delapouite/gauntlet.html
-- slot_boots: 'leather-boot' by Lorc — https://game-icons.net/1x1/lorc/leather-boot.html
-- slot_ring: 'diamond-ring' by Delapouite — https://game-icons.net/1x1/delapouite/diamond-ring.html
-- stat_atk: 'crossed-swords' by Lorc — https://game-icons.net/1x1/lorc/crossed-swords.html
-- stat_hp: 'hearts' by Skoll — https://game-icons.net/1x1/skoll/hearts.html
-- stat_regen: 'health-increase' by sbed — https://game-icons.net/1x1/sbed/health-increase.html
-- stat_crit: 'bullseye' by Skoll — https://game-icons.net/1x1/skoll/bullseye.html
-- stat_critdmg: 'bright-explosion' by Lorc — https://game-icons.net/1x1/lorc/bright-explosion.html
-- stat_aspd: 'wind-slap' by Lorc — https://game-icons.net/1x1/lorc/wind-slap.html
-- sk_whirl: 'sword-spin' by Lorc — https://game-icons.net/1x1/lorc/sword-spin.html
-- sk_dash: 'running-ninja' by Darkzaitzev — https://game-icons.net/1x1/darkzaitzev/running-ninja.html
-- sk_guard: 'templar-shield' by Delapouite — https://game-icons.net/1x1/delapouite/templar-shield.html
-- sk_quake: 'earth-crack' by Lorc — https://game-icons.net/1x1/lorc/earth-crack.html
-- sk_fireball: 'burning-meteor' by Lorc — https://game-icons.net/1x1/lorc/burning-meteor.html
+[아이콘] game-icons.net — CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · 수정: 매끈한 고해상도로 색·그라데이션·반짝·외곽선(장비 36개 = 등급 색·빛 · ui_theme_hd.py)
+- auto: 'cycle' by Lorc — https://game-icons.net/1x1/lorc/cycle.html
+- boss: 'horned-helm' by Lorc — https://game-icons.net/1x1/lorc/horned-helm.html
+- chest: 'chest' by Delapouite — https://game-icons.net/1x1/delapouite/chest.html
+- cur_gem: 'gems' by Lorc — https://game-icons.net/1x1/lorc/gems.html
+- cur_gold: 'two-coins' by Delapouite — https://game-icons.net/1x1/delapouite/two-coins.html
+- cur_stone: 'crystal-shine' by Lorc — https://game-icons.net/1x1/lorc/crystal-shine.html
+- levelup: 'upgrade' by Delapouite — https://game-icons.net/1x1/delapouite/upgrade.html
+- offline: 'night-sleep' by Delapouite — https://game-icons.net/1x1/delapouite/night-sleep.html
+- sk_barrier: 'shield-echoes' by Lorc — https://game-icons.net/1x1/lorc/shield-echoes.html
 - sk_blizzard: 'snowflake-2' by Lorc — https://game-icons.net/1x1/lorc/snowflake-2.html
 - sk_chain: 'lightning-branches' by Lorc — https://game-icons.net/1x1/lorc/lightning-branches.html
-- sk_barrier: 'shield-echoes' by Lorc — https://game-icons.net/1x1/lorc/shield-echoes.html
-- tab_grow: 'biceps' by Delapouite — https://game-icons.net/1x1/delapouite/biceps.html
-- tab_gear: 'chest-armor' by Delapouite — https://game-icons.net/1x1/delapouite/chest-armor.html
-- tab_pet: 'paw-print' by Lorc — https://game-icons.net/1x1/lorc/paw-print.html
-- tab_mount: 'horse-head' by Delapouite — https://game-icons.net/1x1/delapouite/horse-head.html
-- tab_skill: 'spell-book' by Delapouite — https://game-icons.net/1x1/delapouite/spell-book.html
-- tab_settings: 'cog' by Lorc — https://game-icons.net/1x1/lorc/cog.html
-- cur_gold: 'two-coins' by Delapouite — https://game-icons.net/1x1/delapouite/two-coins.html
-- cur_gem: 'gems' by Lorc — https://game-icons.net/1x1/lorc/gems.html
-- cur_stone: 'crystal-shine' by Lorc — https://game-icons.net/1x1/lorc/crystal-shine.html
-- boss: 'horned-helm' by Lorc — https://game-icons.net/1x1/lorc/horned-helm.html
-- offline: 'night-sleep' by Delapouite — https://game-icons.net/1x1/delapouite/night-sleep.html
-- chest: 'chest' by Delapouite — https://game-icons.net/1x1/delapouite/chest.html
-- levelup: 'upgrade' by Delapouite — https://game-icons.net/1x1/delapouite/upgrade.html
-- auto: 'cycle' by Lorc — https://game-icons.net/1x1/lorc/cycle.html
+- sk_dash: 'running-ninja' by Darkzaitzev — https://game-icons.net/1x1/darkzaitzev/running-ninja.html
+- sk_fireball: 'burning-meteor' by Lorc — https://game-icons.net/1x1/lorc/burning-meteor.html
+- sk_guard: 'templar-shield' by Delapouite — https://game-icons.net/1x1/delapouite/templar-shield.html
+- sk_quake: 'earth-crack' by Lorc — https://game-icons.net/1x1/lorc/earth-crack.html
+- sk_whirl: 'sword-spin' by Lorc — https://game-icons.net/1x1/lorc/sword-spin.html
+- slot_armor: 'breastplate' by Lorc — https://game-icons.net/1x1/lorc/breastplate.html
+- slot_boots: 'leather-boot' by Lorc — https://game-icons.net/1x1/lorc/leather-boot.html
+- slot_gloves: 'gauntlet' by Delapouite — https://game-icons.net/1x1/delapouite/gauntlet.html
+- slot_helmet: 'crested-helmet' by Lorc — https://game-icons.net/1x1/lorc/crested-helmet.html
+- slot_ring: 'diamond-ring' by Delapouite — https://game-icons.net/1x1/delapouite/diamond-ring.html
+- slot_staff: 'wizard-staff' by Lorc — https://game-icons.net/1x1/lorc/wizard-staff.html
+- slot_weapon: 'broadsword' by Lorc — https://game-icons.net/1x1/lorc/broadsword.html
+- stat_aspd: 'wind-slap' by Lorc — https://game-icons.net/1x1/lorc/wind-slap.html
+- stat_atk: 'crossed-swords' by Lorc — https://game-icons.net/1x1/lorc/crossed-swords.html
+- stat_crit: 'bullseye' by Skoll — https://game-icons.net/1x1/skoll/bullseye.html
+- stat_critdmg: 'bright-explosion' by Lorc — https://game-icons.net/1x1/lorc/bright-explosion.html
+- stat_hp: 'hearts' by Skoll — https://game-icons.net/1x1/skoll/hearts.html
+- stat_regen: 'health-increase' by sbed — https://game-icons.net/1x1/sbed/health-increase.html
 - summon: 'star-swirl' by Lorc — https://game-icons.net/1x1/lorc/star-swirl.html
+- tab_gear: 'chest-armor' by Delapouite — https://game-icons.net/1x1/delapouite/chest-armor.html
+- tab_grow: 'biceps' by Delapouite — https://game-icons.net/1x1/delapouite/biceps.html
+- tab_mount: 'horse-head' by Delapouite — https://game-icons.net/1x1/delapouite/horse-head.html
+- tab_pet: 'paw-print' by Lorc — https://game-icons.net/1x1/lorc/paw-print.html
+- tab_settings: 'cog' by Lorc — https://game-icons.net/1x1/lorc/cog.html
+- tab_skill: 'spell-book' by Delapouite — https://game-icons.net/1x1/delapouite/spell-book.html
+- gear_0_0: 'gladius' by Skoll — https://game-icons.net/1x1/skoll/gladius.html
+- gear_0_1: 'two-handed-sword' by Delapouite — https://game-icons.net/1x1/delapouite/two-handed-sword.html
+- gear_0_2: 'piercing-sword' by Lorc — https://game-icons.net/1x1/lorc/piercing-sword.html
+- gear_0_3: 'rune-sword' by Lorc — https://game-icons.net/1x1/lorc/rune-sword.html
+- gear_0_4: 'relic-blade' by Lorc — https://game-icons.net/1x1/lorc/relic-blade.html
+- gear_0_5: 'winged-sword' by Lorc — https://game-icons.net/1x1/lorc/winged-sword.html
+- gear_1_0: 'robin-hood-hat' by Delapouite — https://game-icons.net/1x1/delapouite/robin-hood-hat.html
+- gear_1_1: 'light-helm' by Delapouite — https://game-icons.net/1x1/delapouite/light-helm.html
+- gear_1_2: 'visored-helm' by Lorc — https://game-icons.net/1x1/lorc/visored-helm.html
+- gear_1_3: 'overlord-helm' by Delapouite — https://game-icons.net/1x1/delapouite/overlord-helm.html
+- gear_1_4: 'elf-helmet' by Kier Heyl — https://game-icons.net/1x1/kier-heyl/elf-helmet.html
+- gear_1_5: 'warlord-helmet' by Caro Asercion — https://game-icons.net/1x1/caro-asercion/warlord-helmet.html
+- gear_2_0: 'shirt' by Lucas — https://game-icons.net/1x1/lucasms/shirt.html
+- gear_2_1: 'mail-shirt' by Lorc — https://game-icons.net/1x1/lorc/mail-shirt.html
+- gear_2_2: 'abdominal-armor' by Delapouite — https://game-icons.net/1x1/delapouite/abdominal-armor.html
+- gear_2_3: 'heart-armor' by Delapouite — https://game-icons.net/1x1/delapouite/heart-armor.html
+- gear_2_4: 'cape-armor' by Delapouite — https://game-icons.net/1x1/delapouite/cape-armor.html
+- gear_2_5: 'scale-mail' by Lorc — https://game-icons.net/1x1/lorc/scale-mail.html
+- gear_3_0: 'gloves' by Delapouite — https://game-icons.net/1x1/delapouite/gloves.html
+- gear_3_1: 'mailed-fist' by Lorc — https://game-icons.net/1x1/lorc/mailed-fist.html
+- gear_3_2: 'black-hand-shield' by Lorc — https://game-icons.net/1x1/lorc/black-hand-shield.html
+- gear_3_3: 'magic-palm' by Lorc — https://game-icons.net/1x1/lorc/magic-palm.html
+- gear_3_4: 'thor-fist' by Lorc — https://game-icons.net/1x1/lorc/thor-fist.html
+- gear_3_5: 'monster-grasp' by Lorc — https://game-icons.net/1x1/lorc/monster-grasp.html
+- gear_4_0: 'sandal' by Delapouite — https://game-icons.net/1x1/delapouite/sandal.html
+- gear_4_1: 'fur-boot' by Delapouite — https://game-icons.net/1x1/delapouite/fur-boot.html
+- gear_4_2: 'running-shoe' by Delapouite — https://game-icons.net/1x1/delapouite/running-shoe.html
+- gear_4_3: 'tabi-boot' by DarkZaitzev — https://game-icons.net/1x1/darkzaitzev/tabi-boot.html
+- gear_4_4: 'metal-boot' by Delapouite — https://game-icons.net/1x1/delapouite/metal-boot.html
+- gear_4_5: 'wingfoot' by Lorc — https://game-icons.net/1x1/lorc/wingfoot.html
+- gear_5_0: 'ring' by Delapouite — https://game-icons.net/1x1/delapouite/ring.html
+- gear_5_1: 'power-ring' by Delapouite — https://game-icons.net/1x1/delapouite/power-ring.html
+- gear_5_2: 'gem-pendant' by Lorc — https://game-icons.net/1x1/lorc/gem-pendant.html
+- gear_5_3: 'gem-necklace' by Lorc — https://game-icons.net/1x1/lorc/gem-necklace.html
+- gear_5_4: 'sun' by Lorc — https://game-icons.net/1x1/lorc/sun.html
+- gear_5_5: 'third-eye' by Lorc — https://game-icons.net/1x1/lorc/third-eye.html
 
 [코드로 만든 것]
 - 도트 효과(칼 휘두름·회전 베기·불덩이·폭발·얼음·방패 빛·땅 가르기·돌진·먼지·레벨업 빛기둥·빛 조각·그림자·금화·반짝·상자): fx_make.py(자체 제작)
-- 대장 출현 띠·처치 글자·빨간 가장자리·UI 둥근 판: (주)옵시드 자체 제작(코드)
+- 상점/광산 탭 아이콘 실루엣·광산 광석 도트: gear_icons.py(자체 제작, 외부 그림·AI 없음)
+- 화면 판(금테 남색 판·단추·탭·스킬 칸·막대·재화 알약·대장 띠·알림 점, 매끈한 2배 해상도): ui_theme_hd.py(자체 제작)
+- 대장 출현·처치 글자·빨간 가장자리: (주)옵시드 자체 제작(코드)
